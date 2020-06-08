@@ -38,15 +38,15 @@ In this lab, we use demonstrate how terraform (instead of eksctl/cloudformation)
 
    * Review the templates
 
-   vpc.tf provisions a VPC, subnets and availability zones using the AWS VPC Module. A new VPC is created for this guide so it doesn't impact your existing cloud environment and resources.
+   *vpc.tf* provisions a VPC, subnets and availability zones using the AWS VPC Module. A new VPC is created for this guide so it doesn't impact your existing cloud environment and resources.
 
-   security-groups.tf provisions the security groups used by the EKS cluster.
+   *security-groups.tf* provisions the security groups used by the EKS cluster.
 
-   eks-cluster.tf provisions all the resources (AutoScaling Groups, etc...) required to set up an EKS cluster in the private subnets and bastion servers to access the cluster using the AWS EKS Module.
+   *eks-cluster.tf* provisions all the resources (AutoScaling Groups, etc...) required to set up an EKS cluster in the private subnets and bastion servers to access the cluster using the AWS EKS Module.
 
-   outputs.tf defines the output configuration.
+   *outputs.tf* defines the output configuration.
 
-   versions.tf sets the Terraform version to at least 0.12. It also sets versions for the providers used in this sample.
+   *versions.tf* sets the Terraform version to at least 0.12. It also sets versions for the providers used in this sample.
 
    * Modify the eks-cluster.tf template removing the worker groups and add a new spot worker group. Optionally, you can modify the cluster name and other parameters of your choice.
 
