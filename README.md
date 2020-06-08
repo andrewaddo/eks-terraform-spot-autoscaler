@@ -107,6 +107,13 @@ In this lab, we use demonstrate how terraform (instead of eksctl/cloudformation)
    ```
 
 1. Verify that pods are scaled up following with nodes scaled up.
+1. Terminate the busybox test and observe both pods and nodes are scaled down.
+1. Clean up following this [section](https://eksworkshop.com/beginner/080_scaling/cleanup/)
+1. Clean up the cluster
+
+   ```bash
+   tf destroy
+   ```
 
 ## Refs
 
