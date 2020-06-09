@@ -85,10 +85,10 @@ In this lab, we use demonstrate how terraform (instead of eksctl/cloudformation)
    aws eks --region us-west-2 update-kubeconfig --name <cluster name>
    ```
 
-1. Follow this [section](https://eksworkshop.com/beginner/080_scaling/) to install both HPA and CA.
+1. Follow this [section](https://eksworkshop.com/beginner/080_scaling/) to set up both HPA and CA.
 
-   * On HPA configurations, change the cpu threshold to 10% instead of 50%, and maximum pods to 50 instead of 10. You may skip running the busybox invocations after CA setup.
-   * $ROLE_NAME can be retrieved from the AWS EC2 console instead.
+   * On HPA configurations, change the cpu threshold to 10% instead of 50%, and maximum pods to 50 instead of 10. You may skip running the busybox invocations until after CA setup.
+   * *$ROLE_NAME* can be retrieved from the AWS EC2 console instead.
 
 1. Run tests
 
